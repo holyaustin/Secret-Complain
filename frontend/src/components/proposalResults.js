@@ -70,7 +70,7 @@ const ProposalResults = ({ proposals }) => {
 
   return (
     <div>
-      <h2>Closed Proposals</h2>
+      <h2>Closed Complains</h2>
       {sortedProposals.length > 0 ? (
         sortedProposals.map((proposal, index) => (
           <div key={index} className="proposal">

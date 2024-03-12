@@ -32,7 +32,7 @@ const CreateProposal = ({ contractABI, contractAddress }) => {
       const confirmations = await receipt.confirmations;
 
       alert(
-        `Proposal created successfully with ${confirmations} confirmations!`
+        `Complain created successfully with ${confirmations} confirmations!`
       );
     } catch (error) {
       console.error(error);
@@ -49,10 +49,10 @@ const CreateProposal = ({ contractABI, contractAddress }) => {
 
   return (
     <div className="column">
-      <h2>Create New Proposal</h2>
+      <h2>Create New Complain</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Proposal Name
+          Complain Name
           <input
             type="text"
             value={proposalName}
@@ -73,7 +73,7 @@ const CreateProposal = ({ contractABI, contractAddress }) => {
         </label>
 
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Submitting..." : "Submit Proposal"}
+          {isSubmitting ? "Submitting..." : "Submit Complain"}
         </button>
       </form>
     </div>

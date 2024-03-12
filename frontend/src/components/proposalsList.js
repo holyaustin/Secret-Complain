@@ -61,7 +61,7 @@ const ProposalsList = ({ proposals, contractABI, contractAddress, onVote }) => {
 
   return (
     <div>
-      <h2>Open Proposals</h2>
+      <h2>Open Complains</h2>
       <ul style={{ listStyleType: "none", padding: 0 }}>{renderProposals()}</ul>
     </div>
   );

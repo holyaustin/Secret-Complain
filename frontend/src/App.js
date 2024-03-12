@@ -75,7 +75,7 @@ function App() {
     <div className="App">
       <ConnectWallet />
       <div className="header">
-        <h1>Private Voting on Secret Network</h1>
+        <h1>Secret-Complain dApp</h1>
       </div>
       <div className="columns">
         <CreateProposal
