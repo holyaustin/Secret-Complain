@@ -19,6 +19,8 @@ const CreateProposal = ({ contractABI, contractAddress }) => {
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
 
+      console.log("contract on polygon is", contractAddress)
+      
       const contract = new Contract(contractAddress, contractABI, signer);
       const tx = await contract.createProposal(
         proposalName,

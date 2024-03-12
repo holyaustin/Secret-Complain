@@ -10,6 +10,8 @@ import "./App.css";
 const contractABI = ABI.abi;
 const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
 
+console.log("Contract on Polygon is", contractAddress)
+
 function App() {
   const [openProposals, setOpenProposals] = useState([]);
   const [closedProposals, setClosedProposals] = useState([]);
@@ -76,6 +78,9 @@ function App() {
       <ConnectWallet />
       <div className="header">
         <h1>Secret-Complain dApp</h1>
+        <h2>Write you complain in the create complain Tab </h2>
+        <h2>Select the number of community member to vote on your complain</h2>
+        <h2>Approve transactions on chain and your complain is anonymous </h2>
       </div>
       <div className="columns">
         <CreateProposal
